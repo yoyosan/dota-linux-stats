@@ -25,6 +25,10 @@ while true; do
 	echo
 	ps -C "dota_linux" -F
 	echo
+	debug 50 '-' 'top info'
+	echo
+	top -n 1 -bcH | head -n 10
+	echo
 	debug 50 '-' 'IO info'
 	echo
 	iostat -dkx /dev/sda6
